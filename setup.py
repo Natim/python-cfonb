@@ -21,7 +21,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 setup(
       name='python-cfonb',
       
-      version='2.9',
+      version='2.10',
       
       description="Pure Python lib to read/write CFONB files, forked from https://github.com/akretion/python-cfonb",
       long_description=long_description,
