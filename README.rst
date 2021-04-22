@@ -1,3 +1,9 @@
+.. image:: https://badge.fury.io/py/python-cfonb.svg
+    :target: https://badge.fury.io/py/python-cfonb
+.. image:: https://github.com/dhatim/python-cfonb/workflows/build/badge.svg
+    :target: https://github.com/dhatim/python-cfonb/actions
+
+
 Python-CFONB
 ============
 
