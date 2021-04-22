@@ -10,7 +10,7 @@ from codecs import open
 from os import path
 
 # Always prefer setuptools over distutils
-from setuptools import setup
+from setuptools import setup, find_packages
 
 here = path.abspath(path.dirname(__file__))
 
@@ -35,7 +35,7 @@ setup(
       url='https://github.com/dhatim/python-cfonb',
       
       license='LGPL',
-      packages=['python-cfonb'],
+      packages=find_packages(exclude=['ez_setup', 'examples', 'tests']),
       python_requires='>=2.7',
       install_requires=['semantic_version>=2.7.0', 'toml'],
 
