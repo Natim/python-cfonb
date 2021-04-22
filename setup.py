@@ -7,7 +7,7 @@ https://github.com/pypa/sampleproject
 
 # To use a consistent encoding
 from codecs import open
-from os import path, environ
+from os import path
 
 # Always prefer setuptools over distutils
 from setuptools import setup
@@ -37,11 +37,9 @@ setup(
       license='LGPL',
       packages=['python-cfonb'],
       python_requires='>=2.7',
-	  install_requires=['semantic_version>=2.7.0', 'toml'],
-      
-      entry_points={
-        'console_scripts': [
-            'python-cfonb=python-cfonb.command_line:main'
-        ],
-    },
+      install_requires=['semantic_version>=2.7.0', 'toml'],
+
+      entry_points={},
+
+      test_suite="cfonb.tests.test_all.suite"
 )
