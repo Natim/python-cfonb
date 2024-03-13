@@ -66,10 +66,8 @@ Or as an object::
 The statement lines between the header and the footer can be iterated::
 
     >>> # TODO: use an interator, and hide the parse_amount in the object
-    >>> from cfonb.parser.common import parse_amount
     >>> for line in statement.lines:
-    ...     l = line.as_obj()
-    ...     print parse_amount(l.amount, l.nb_of_dec)
+    ...     print(round(line.amount, int(line.nb_of_dec)))
     -2000.0
     -1000.0
     4000.0
